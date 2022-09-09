@@ -218,7 +218,7 @@
     margin: 0;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1399px) {
   .footer .logo {
     display: none;
   }
@@ -255,9 +255,8 @@
     justify-content: left;
   }
 }
-.downloads__item {
-  margin-left: 30px;
-  padding: 5px;
+.downloads__item:first-child {
+  margin-right: 10px;
 }
 
 .additional-navigation {
@@ -340,18 +339,19 @@
 .social-links {
   margin-top: 30px;
   margin-bottom: 23px;
-}
-@media screen and (min-width: 1400px) {
-  .social-links {
-    margin-left: auto;
-    margin-bottom: 0;
-  }
+  margin-left: auto;
 }
 .social-links__item {
   margin-left: 20px;
 }
-.social-links__item :first-child {
+.social-links__item:first-child {
   margin-left: 0;
+}
+@media screen and (max-width: 1399px) {
+  .social-links {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .logo-vertical {
@@ -626,7 +626,7 @@
     margin-left: auto;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1399px) {
   .headline__actions-btn {
     width: 100%;
   }
@@ -683,6 +683,169 @@
   max-width: 100%;
 }
 
+.inbox {
+  background-color: #fcf0e3;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 1400px) {
+  .inbox {
+    width: 1400px;
+    height: 790px;
+    display: flex;
+    padding: 132px 99px 120px 193px;
+  }
+}
+.inbox__content {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__content {
+    width: 1140px;
+    margin-left: 164px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .inbox__column {
+    width: 459px;
+  }
+}
+.inbox__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f1592b;
+  margin: 0;
+}
+.inbox__title {
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 32px;
+  font-size: 40px;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+.inbox__description {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+.inbox__advantage {
+  background: #ffffff;
+  padding: 20px 30px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: solid 4px #0185d0;
+}
+.inbox__advantage-image {
+  height: 40px;
+}
+.inbox__advantage-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2b292d;
+  margin: 0;
+  margin-left: 15px;
+}
+.inbox__advantage-wrap {
+  display: flex;
+  align-items: center;
+}
+.inbox__advantage-textWrap {
+  margin: 11px;
+}
+.inbox__advantage-textWrap_title {
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 16px;
+}
+.inbox__advantage-textWrap_text {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.inbox__left-desctop {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__left-desctop {
+    display: block;
+  }
+}
+.inbox__left-mobile {
+  display: none;
+}
+@media screen and (max-width: 1399px) {
+  .inbox__left-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.communicate__content {
+  display: block;
+}
+@media screen and (min-width: 1400px) {
+  .communicate__content {
+    display: flex;
+  }
+}
+.communicate__content-block {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.communicate__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+.communicate__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+.communicate__subtitle {
+  color: #0189d1;
+  font-size: 22px;
+}
+.communicate__banner-description {
+  color: rgba(43, 41, 45, 0.6);
+}
+.communicate__banner {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 1400px) {
+  .communicate__column {
+    display: flex;
+  }
+}
+.communicate__column-section {
+  margin-bottom: 33px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.communicate__column-text {
+  font-weight: 400;
+  size: 18px;
+  line-height: 26px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -690,7 +853,7 @@
 html {
   font-size: 16px;
   font-family: "Work Sans", sans-serif;
-  color: #2B292D;
+  color: #2b292d;
 }
 
 .page {

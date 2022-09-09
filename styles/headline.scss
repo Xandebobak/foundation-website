@@ -96,7 +96,7 @@
   }
 
   &__actions-btn {
-    @include for-large-up {
+    @include for-large-down {
       width: 100%;
     }
   }
