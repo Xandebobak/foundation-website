@@ -845,6 +845,24 @@
   size: 18px;
   line-height: 26px;
 }
+.communicate__banner {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .communicate__banner {
+    display: block;
+  }
+}
+.communicate__banner-mobile {
+  display: none;
+}
+@media screen and (max-width: 1399px) {
+  .communicate__banner-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 * {
   box-sizing: border-box;

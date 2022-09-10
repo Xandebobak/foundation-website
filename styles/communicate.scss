@@ -54,4 +54,18 @@
     size: 18px;
     line-height: 26px;
   }
+  &__banner {
+    display: none;
+    @include for-large-up {
+      display: block;
+    }
+  }
+  &__banner-mobile {
+    display: none;
+    @include for-large-down {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
